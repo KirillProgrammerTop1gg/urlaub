@@ -1,0 +1,66 @@
+.partners-section{
+    background-color: $main-color;
+    padding: 65px 0 72px;
+    &__title{
+        @include text-style('Montserrat',700,22px,1.23,$partners-color,center);
+    }
+    &__list{
+        margin: 0 auto;
+        display: flex;
+        margin-top: 31px;
+        flex-wrap: wrap;
+        @media screen and (min-width: 320px){
+            width: 283px;
+            gap: 31px 0;
+            justify-content: center;
+        }
+        @media screen and (min-width: 768px){
+            width: 470px;
+            justify-content: space-between;
+            gap: 57px 0;
+        }
+        @media screen and (min-width: 970px){
+            width: 880px;
+        }
+    }
+    &__item{
+        width: 210px;
+    }
+    &__img{
+        display: block;
+        margin: 0 auto;
+    }
+    &__name{
+        @include text-style('Montserrat',700,14px,1.21,$partners-color,center);
+        margin-top: 16px;
+    }
+    &__text{
+        font-family: 'Roboto';
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 1.14;
+        text-align: center;
+        color: $partners-subcolor;
+        margin-top: 13px;
+    }
+    &__button{
+        @include text-style('Montserrat',700,14px,1.14,$subcolor,center);
+        background-color: $main-color;
+        display: block;
+        margin: 0 auto;
+        border: 0;
+        @media screen and (min-width: 320px){
+            width: 280px;
+            height: 40px;
+            margin-top: 29px;
+        }
+        @media screen  and (min-width: 768px){
+            margin-top: 38px;
+            width: 195px;
+            height: 43px;
+        }
+        border-radius: 50px;
+        border: 2px solid $subcolor;
+        padding: 7px 15px;
+    }
+}
